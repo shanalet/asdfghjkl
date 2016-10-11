@@ -108,3 +108,7 @@ div.row a {color: inherit;}
 .carousel-inner {
 	height: 100%;
 }
+
+.img-center {
+	margin: 0 auto;
+}
