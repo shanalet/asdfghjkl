@@ -1,8 +1,6 @@
 //Animations
 
 $(function(){
-	$('#Gameplay').hide().slideDown(800);
-	$('#Currencies').hide().slideDown(800);
 	$.notify({
 	title: '<strong>Hello!</strong>',
 	message: "All of this is a work in progress so just sit tight and maybe I'll fix things."
