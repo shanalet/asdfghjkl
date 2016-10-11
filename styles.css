@@ -1,5 +1,5 @@
 a{text-decoration: none !important;}
-body {background:#E4F4FA !important; padding-top: 50px;	}	
+body {background:#E4F4FA !important; padding-top: 50px;}	
 .table td {text-align:center;}
 .table th {text-align:center;}
 .table tbody tr td {vertical-align: middle;}
@@ -22,6 +22,28 @@ div.row a {color: inherit;}
 	-ms-transform:translate(-50%,-50%);
 	white-space:nowrap;"		
 }
+
+.landingbox {
+	position:absolute;
+	top:54%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	white-space:nowrap;"		
+}
+
+.landinghead {
+	color:#fff!important;
+	background-color:#000!important;
+	font-family:'Helvetica';
+	font-size:96px!important;
+	padding:16px 32px!important;
+	opacity:0.40;
+	filter:alpha(opacity=40);
+	-webkit-backface-visibility:hidden;
+	letter-spacing: 10px;
+}
+
 
 .sectionhead {
 	color:#fff!important;
