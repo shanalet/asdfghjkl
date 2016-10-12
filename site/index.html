@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		<h1 align=center>Lyric Clicker</h1>
+		<table align="center">
+		<tr>
+			<th>Lyrics </th>
+			<th> <span id="lyric">0</span></th>
+		</tr>
+		<tr>
+			<th> <small>Lyrics per Second</small> </th>
+			<th> <span id="perSecond">0</span> </th>
+		</tr>
+		<tr>
+			<th> <small>Lyrics per Click</small></th>
+			<th> <span id="clickvalue">1</span></th>
+		<tr>
+			<th colspan=2><button onclick="lyricGain(clickvalue)">Hit Play!</button></th>
+		</tr>
+		</table>
+		
+		<br>
+		
+		<table align="center">
+			<th colspan=3>Where You'll Get Your Sick Beats</th>
+			<th colspan=3>Upgrade Your Taste</th>
+		<tr>
+			<td>Radio</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyRadio()">Use The Radio!</button></td>
+			<td>Stations</td>
+			<td>Cost</td>
+			<td rowspan=2><button onclick="radioUpgrade()">Listen to another radio station!</button></td>
+		</tr>
+		<tr>
+			<td><span id="radio">0</span></td>
+			<td><span id="RadioCost">25</span></td>
+			<td><span id="radioMultiplier">1</span></td>
+			<td><span id="radioMultiplierCost">320</span></td>
+		</tr>
+		<tr>
+			<td>Playlist</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyTrack()">Listen to multiple songs in a row!</button></td>
+			<td>Songs</td>
+			<td>Cost</td>
+			<td rowspan=2><button onclick="IncreaseTrack()">Add songs to the playlist!</button></td>
+		</tr>
+		<tr>
+			<td><span id="track">0</span></td>
+			<td><span id="TrackCost">800</span></td>
+			<td><span id="TrackNumber">5</span></td>
+			<td><span id="IncreaseTrackCost">480</span></td>
+		</tr>
+		<tr>
+			<td>Mixtape</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyMixtape()">Get a sick mixtape from your friend!</button></td>
+			<td>Friends</td>
+			<td>Cost</td>
+			<td rowspan=2><button onclick="mixtapeUpgrade()">Get a new friend to get more music!</button></td>
+		</tr>
+		<tr>
+			<td><span id="mixtape">0</span></td>
+			<td><span id="MixtapeCost">3500</span></td>
+			<td><span id="mixtapeMultiplier">1</span></td>
+			<td><span id="mixtapeUpgradeCost">6000</span></td>
+		</tr>
+		<tr>
+			<td>Album</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyAlbum()">Grab a copy of your fave artist's new record!</button></td>
+		</tr>
+		<tr>
+			<td><span id="album">0</span></td>
+			<td><span id="AlbumCost">10000</span></td>
+		</tr>
+		<tr>
+			<td>Compilation</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyCompilation()">Grab a list of the greatest hits!</button></td>
+		</tr>
+		<tr>
+			<td><span id="compilation">0</span></td>
+			<td><span id="CompilationCost">35000</span></td>
+		</tr>
+		<tr>
+			<td>Top 40</td> 
+			<td>Cost</td>
+			<td rowspan=2><button onclick="buyUKChart()">Listen to today's top 40!</button></td>
+		</tr>
+		<tr>
+			<td><span id="ukcharts">0</span></td>
+			<td><span id="ukchartsCost">100000</span></td>
+		</tr>
+		</table>
+	<script type="text/javascript" src="main.js"></script>	
+	</body>
+</html>
