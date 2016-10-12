@@ -1,0 +1,28 @@
+* {
+	padding: 5px;
+	text-align: center;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+	background-color: #8FD8D8;
+ }
+button {
+	height: 50;
+	width: 300px;
+}
+div {
+	text-align: center;
+	padding: 10px;
+	border: 2px solid black;
+	width: 250px;
+}
+table {
+	border: 2px solid;
+	width: 500px;
+}
+th {
+	border: 2px solid;
+}
+td {
+	border: 1px solid;
+}
