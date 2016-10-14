@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Name: <input type="text" id="name"></input> Section: <input type="text" id="section"></input>
+<br>
+Grade: <input type="text" id="grade"></input> Score: <span id="score"></span>
+
+<br>
+
+
+Question 1: Which of the following is not a string instrument?
+<form>
+<input type="radio" name="q1" onclick="unset1()"> Guitar </input>
+<input type="radio" name="q1" onclick="set1()"> Drum </input>
+<input type="radio" name="q1" onclick="unset1()"> Violin </input>
+<input type="radio" name="q1" onclick="unset1()"> Harp </input>
+</form>
+
+Question 2: What is 3/5 expressed as a percentage?
+<form>
+<input type="radio" name="q2" onclick="unset2()"> 50% </input>
+<input type="radio" name="q2" onclick="unset2()"> 33% </input>
+<input type="radio" name="q2" onclick="set2()"> 60% </input>
+<input type="radio" name="q2" onclick="unset2()"> 70% </input>
+</form>
+
+Question 3: What does "www" stand for?
+<form>
+<input type="radio" name="q3" onclick="unset3()"> World Wide Wait </input>
+<input type="radio" name="q3" onclick="set3()"> World Wide Web </input>
+<input type="radio" name="q3" onclick="unset3()"> World Wide Wire </input>
+<input type="radio" name="q3" onclick="unset3()"> World Wide Water </input>
+</form>
+
+Question 4: What is the chemical symbol for silver?
+<form>
+<input type="radio" name="q4" onclick="unset4()"> Sv </input>
+<input type="radio" name="q4" onclick="set4()"> Ag </input>
+<input type="radio" name="q4" onclick="unset4()"> Au </input>
+<input type="radio" name="q4" onclick="unset4()"> Si </input>
+</form>
+
+Question 5: What is the name of Captain Nemo's submarine in 20,000 Leagues Under The Sea?
+<form>
+<input type="radio" name="q5" onclick="set5()"> Nautilus </input>
+<input type="radio" name="q5" onclick="unset5()"> Beagle </input>
+<input type="radio" name="q5" onclick="unset5()"> Enterprise </input>
+<input type="radio" name="q5" onclick="unset5()"> Dreadnought </input>
+</form>
+
+<button onclick="check()">Submit</input>
+
+</div>
+<script>
+var Q1 = 0;
+var Q2 = 0;
+var Q3 = 0;
+var Q4 = 0;
+var Q5 = 0;
+var score = 0;
+
+function set1(){
+	Q1 = 1};
+function set2(){
+	Q2 = 1};
+function set3(){
+	Q3 = 1};
+function set4(){
+	Q4 = 1};
+function set5(){
+	Q5 = 1};
+function unset1(){
+	Q1 = 0};
+function unset2(){
+	Q2 = 0};
+function unset3(){
+	Q3 = 0};
+function unset4(){
+	Q4 = 0};	
+function unset5(){
+	Q5 = 0};
+	
+function check(){
+	score = Q1 + Q2 + Q3 + Q4 + Q5
+	document.getElementById("score").innerHTML = score};
+
+</script>
+</body
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="myInput"></input></p>
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo">Got some fruits?</p>
+
+<script>
+function checkFruit(){
+	var fruits = document.getElementById("myInput").value;
+	switch(fruits){
+	case "Banana":
+		demo = "Banana is good!";
+		break;
+	case "Orange":
+		demo = "I am not a fan of Orange";
+		break;
+	case "Apple":
+		demo = "How you like them Apples?"
+		break;
+	default:
+		demo = "I have never heard of that :/";
+	};
+	document.getElementById("demo").innerHTML = demo;
+};
+</script>
+</body>
+</html>

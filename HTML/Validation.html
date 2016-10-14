@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Javascript Can Vailidate Input</h1>
+
+Username: <input type="text" id="user"></input>
+<br>
+Password: <input type="password" id="pass"></input>
+<br>
+<button onclick="check()">Log In</button>
+
+<p id="reply">Enter your credentials</p>
+
+<script>
+
+function check(){
+	user = document.getElementById("user").value
+	pass = document.getElementById("pass").value
+	if(user === "admin"){
+		if(pass === "123")
+		{document.getElementById("reply").innerHTML = "Welcome!"}
+		else{
+		document.getElementById("reply").innerHTML = "Wrong Password!"}}
+	else{
+	document.getElementById("reply").innerHTML = "Unknown User"}
+		
+};
+
+</script>
+</body>
+</html>

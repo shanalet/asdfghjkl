@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> Fahrenheit to Celsius </p>
+<input type="number" id="FBox"></input>
+<button onclick="toC()">Convert</button>
+<p>Result:<span id="C"></span></p> 
+
+<p> Celsius to Farenheit </p>
+<input type="number" id="CBox"></input>
+<button onclick="toF()">Convert</button>
+<p>Result:<span id="FRes"></span></p> 
+
+<script>
+var C = 0;
+function toC(){
+	var F = document.getElementById('FBox').value;
+	C = (5/9)*(F-32);
+	document.getElementById("C").innerHTML = C;
+	};
+	
+var FRes = 0;
+function toF(){
+	C = document.getElementById('CBox').value;
+	FRes = ((9*C)/5)+32;
+	document.getElementById("FRes").innerHTML = FRes;
+	};
+</script>
+</body>
+</html>

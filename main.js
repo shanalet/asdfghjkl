@@ -9,7 +9,7 @@ $(function(){
 });
 	$.notify({
 	title: '<strong>By the way.</strong>',
-	message: "All of the photos used are just placeholders. No copyright infringement is intended.	"
+	message: "Some of the photos used are just placeholders. No copyright infringement is intended.	"
 },{
 	type: 'danger'
 });
